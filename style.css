@@ -1,0 +1,128 @@
+*{
+
+    margin: 0, auto;
+    font-family: sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Glitch;
+    src: url(RubikGlitch-Regular.ttf);
+}
+:root{
+    --FonteGlitch: Glitch;
+}
+
+
+body{
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);;
+    width: 97%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p{
+    font-family: var(--FonteGlitch);
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    font-size: 65px;
+    text-align: center;
+    
+}
+
+.container{
+    color: #fff;
+    max-width: 500px;
+    text-align: center;
+}
+
+.container span{
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+}
+
+.slider{
+   -webkit-appearance: none; 
+   height: 18px;
+   width: 100%;
+   border-radius: 5px;
+   background-color: #dfdfdfcb;
+   outline: none;
+   margin-top: 10px;
+}
+
+.gerador{
+    text-align: center;
+    color: white;
+    height: 70px;
+    background-color: rgb(50, 148, 50);
+    border-radius: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+    font-size: 22px;
+    border: none;
+}
+
+.hidden-container{
+    color: white;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 22px;
+    margin-top: 26px;
+    margin-bottom: 8px;
+}
+
+.password{
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.39);
+    border: #1d1d22 solid 3px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    cursor: pointer;
+    transition: transform 0.5s;
+
+} 
+
+.password:hover{
+    transform: scale(1.05);
+
+}
+.tooltip{
+    background-color: rgba(0, 0, 0, 0.39);
+    color :#fff;
+    position: relative;
+    top: 20px;
+    padding: 6px 8px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.hide{
+    display: none;
+}
+
+
+.hidden-container:hover .tooltip{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
